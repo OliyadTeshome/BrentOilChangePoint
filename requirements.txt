@@ -1,15 +1,28 @@
-pandas>=1.5.0
-numpy>=1.21.0
-scipy>=1.9.0
-pymc3>=3.17.0
-arviz>=0.12.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
-plotly>=5.10.0
-flask>=2.2.0
-flask-cors>=3.0.10
-scikit-learn>=1.1.0
-statsmodels>=0.13.0
-jupyter>=1.0.0
-pytest>=7.0.0
-python-dotenv>=0.19.0
+# Data Manipulation and Analysis
+pandas
+numpy
+scipy
+
+# Time Series and Statistical Modeling
+pymc3  # For Bayesian change point analysis
+arviz  # For visualizing and diagnosing MCMC sampling
+theano-pymc  # Required dependency for PyMC3
+
+# Data Visualization
+matplotlib
+seaborn
+
+# Web Framework (Flask Backend)
+flask
+flask-cors  # For cross-origin resource sharing with React frontend
+
+# Utilities
+scikit-learn  # For additional statistical tools if needed
+statsmodels  # For time series analysis (e.g., stationarity tests)
+
+# Development and Testing
+pytest  # For unit testing
+jupyter  # For Jupyter notebooks
+
+# Optional: For environment management (if using setup.sh)
+virtualenv
